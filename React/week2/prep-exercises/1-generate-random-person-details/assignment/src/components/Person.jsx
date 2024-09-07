@@ -6,6 +6,8 @@ export const Person = ({person}) => {
         return <p>Loading...</p>
     }
 
+    console.log('Person data:', person);
+
     return (
         <ul>
             <li>First Name: {person.first_name}</li>
@@ -13,4 +15,5 @@ export const Person = ({person}) => {
             <li>Email: {person.email}</li>
         </ul>
     )
-}
+};
+
