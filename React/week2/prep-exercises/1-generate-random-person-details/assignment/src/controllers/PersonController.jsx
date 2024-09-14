@@ -1,6 +1,6 @@
 //React/week2/prep-exercises/1-generate-random-person-details/assignment/src/controllers/PersonController.jsx
 import React, {useState, useEffect} from "react";
-import {Person} from '../components/Person.jsx'
+import {Person} from '../components/Person.jsx';
 
 export const PersonController = () => {
     const [person, setPerson] = useState(null);
@@ -21,14 +21,15 @@ export const PersonController = () => {
 
             setPerson(personData);
         } catch (error) {
-                console.error(`Error while fetching: `, error);
+            console.error(`Error while fetching: `, error);
         }
-
-        useEffect(() => {
-            getPerson();
-        }, []);
-
-        return <Person person={person} />;
-
     };
+    useEffect(() => {
+        console.log('PersonController mounted');
+        getPerson();
+    }, []);
+
+
+    return <Person person={person}/>;
+
 }

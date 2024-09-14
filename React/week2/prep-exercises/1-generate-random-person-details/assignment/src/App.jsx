@@ -5,7 +5,7 @@ import {PersonController} from "./controllers/PersonController.jsx";
 function App() {
     return (
         <div>
-            <PersonController />
+            <PersonController/>
         </div>
     );
 }
