@@ -10,6 +10,7 @@ So let's get started! We will guide you through the steps to set up cypress in a
 
 1. Create a new github repository, name it something like `cypress-playground` as we are just going to play around with it here.
 
+link to a repository: [here](https://github.com/hanna-melnyk/cypress-playground)
 Now let's follow the installation guide as mentioned [here](https://docs.cypress.io/guides/getting-started/installing-cypress):
 
 2. Clone it locally and write `npm install cypress --save-dev` to install the cypress package. Note that you do _not_ have to do anything with React in this exercise, end-to-end testing is completely independent from any implementation details.
